@@ -49,13 +49,13 @@
           <?php
           if($userlevel == 1){
           ?>
-          <a href="#" class="commonBtn appLoadMore">Load more</a>
+          <button href="#" class="commonBtn appLoadMore">Load more</button>
           <a href="#" class="commonBtn toTop">Go To Top</a>
           <a href="/gold/pages/app/app_input_form.php" class="commonBtn">Upload Contents</a>
           <?php
           } else {
           ?>
-          <a href="#" class="commonBtn appLoadMore">Load more</a>
+          <button="#" class="commonBtn appLoadMore">Load more</button>
           <a href="#" class="commonBtn toTop">Go To Top</a>
           <?php
           }

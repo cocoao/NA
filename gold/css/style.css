@@ -17,6 +17,7 @@ input:focus, textarea:focus{background: #f8f8f8;}
 /* general common section style */
 .contents{padding: 50px 0;}
 a.commonBtn{display: inline-block; padding: 10px 0; border: 1px solid #d0af51; color: #d0af51; text-transform: uppercase; width: 30%; text-align:center; margin-top: 10px; transition: all 0.4s; transform: translateY(30px);}
+.commonBtn{display: inline-block; padding: 10px 0; border: 1px solid #d0af51; color: #d0af51; text-transform: uppercase; width: 30%; text-align:center; margin-top: 10px; transition: all 0.4s; transform: translateY(30px); background: #fff;}
 
 /* common title style */
 .contents .title{width: auto; height: auto; text-transform: uppercase; float: left;}

@@ -158,25 +158,40 @@
           <?php
           }
           ?>
-        </div>
+        </div><!-- end of web projects -->
         <div class="fashionBox women">
           <div class="fashionTxt">
-            <h2><em>women</em> fashion</h2>
+            <h2><em>APP</em> projects</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <a href="#">view more</a>
+            <a href="/gold/pages/app/app.php">view more</a>
           </div>
+
+          <?php
+          // include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';
+          $sql="select * from gold_app order by GOLD_APP_num desc limit 3";
+          $app_result = mysqli_query($dbConn,$sql);
+
+          while($app_row=mysqli_fetch_array($app_result)){
+            $app_num=$app_row['GOLD_APP_num'];
+            $app_thumb=$app_row['GOLD_APP_thumb'];
+            $app_tit=$app_row['GOLD_APP_tit'];
+            $app_desc=$app_row['GOLD_APP_des'];
+          ?>
+          <!-- app box loop start -->
           <div class="fashionImg">
-            <div><img src="img/product-type-1.jpg" alt=""></div>
-          </div>
-          <div class="fashionImg">
-            <div><img src="img/women-2.jpg" alt=""></div>
-          </div>
-          <div class="fashionImg">
-            <div><img src="img/product-type-2.jpg" alt=""></div>
-          </div>
-        </div>
+            <div>
+              <img src="/gold/data/app_page/app_thumb/<?=$app_thumb?>" alt="">
+              <h2><?=$app_tit?></h2>
+              <em class="cutTxt"><?=$app_desc?></em>
+              <a href="/gold/pages/app/app_detail.php?num=<?=$app_num?>">view Details</a>
+            </div>
+          </div><!-- end of loop Box -->
+          <?php
+          }
+          ?>
+        </div><!-- end of app projects -->
       </div>
-    </section>
+    </section><!-- end of preview section -->
 
     <?php include $_SERVER["DOCUMENT_ROOT"]."/gold/include/about.php" ?>
 

@@ -95,7 +95,7 @@
             </div><!--end of web detail contents-->
           </div><!--end of leftBox-->
 
-          <div class="designRight deweRight">
+          <div class="webRight deweRight">
           <?php include $_SERVER["DOCUMENT_ROOT"]."/gold/include/web_side_detail.php" ?>
           <?php include $_SERVER["DOCUMENT_ROOT"]."/gold/include/app_side_detail.php" ?>
           </div><!--end of rightBox-->
