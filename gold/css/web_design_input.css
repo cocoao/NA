@@ -1,0 +1,40 @@
+/* design input page style */
+.webDesigninput{width: 100%; height: auto; border:1px solid #d0af51; padding: 10px;}
+.webDesigninput .titleSer{width: 100%; height: auto;}
+/* .designInputForm .titleSer .title_input{display: flex;}
+.designInputForm .titleSer .serial_input{display: flex;} */
+.webDesigninput .titleSer p{width: 33%; float: left; margin-right: 0.5%;}
+.webDesigninput .titleSer p:last-child{margin-right: 0;}
+
+/* .designInputForm .titleSer .serial_input{float:right;} */
+.webDesigninput .titleSer p label{background: #d0af51; color: #fff; padding: 10.5px 0; display: block; width: 25%; text-align: center; float: left;}
+.webDesigninput .titleSer p input{width: 75%; border: 1px solid #d0af51; padding:10px; float: left;}
+.webDesigninput .uploadDesc textarea{width: 100%; height: 200px; border:1px solid #d0af51; margin-top: 10px; resize:none; padding: 10px;}
+
+.webDesigninput .uploadImgs{width: 100%; height: auto; _display: flex; _justify-content: space-between;}
+.webDesigninput .uploadImgs .uploadBox{width: 33%; float: left; height: auto; position: relative; margin-right: 0.5%;}
+.webDesigninput .uploadImgs .uploadBox:last-child{ margin-right: 0;}
+.webDesigninput .uploadBox .inputControll{text-align: center;}
+.webDesigninput .inputControll input[type="file"]{position: absolute; width: 1px; height: 1px; page-break-after: 0; margin: -1; overflow: hidden;}
+.webDesigninput .inputControll label{display: block; width: 100%; height: auto; padding: 10px 0; text-align: center; border:1px solid #d0af51; color: #fff; background:#d0af51; transition: all 0.4s;}
+.webDesigninput .inputControll label:hover{background: #fff; color: #d0af51;}
+.webDesigninput .uploadName{display: block; padding: 10px; width: 100%; border: 1px solid #d0af51; color: #d0af51; margin-bottom: 10px;}
+.webDesigninput .imgWrap{width: 100%; height: auto; padding: 5px; border: 1px solid #d0af51; overflow: hidden; margin-top: 10px;}
+.webDesigninput .imgWrap img{width: 100%;}
+
+/* buttons style */
+.btns{width: 100%; height: auto; margin: 0; justify-content: center; display: flex; transition: all 0.4s;}
+.btns .commonBtn{margin: 0 1px; transition: all 0.4s;}
+.btns .commonBtn:hover{background: #d0af51; color: #fff;}
+
+
+/* web input page style */
+.webInputForm .titleSer p{width: 49.5%;float: left; margin-right: 1%;}
+.webInputForm .titleSer p:nth-child(2),
+.webInputForm .titleSer p:last-child{margin-right: 0;}
+.webInputForm .titleSer p:nth-child(1),
+.webInputForm .titleSer p:nth-child(2){margin-bottom: 5px;}
+
+/* app input page style */
+.webDesigninput .uploadImgs .uploadBox.appImg{width: 49.7%;}
+.webDesigninput .uploadImgs .uploadBox.appImg:last-child{float:right;}

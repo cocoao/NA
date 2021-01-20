@@ -1,0 +1,52 @@
+[
+    {
+        "appnum": "15",
+        "apptitle": "Jenny Mazursky",
+        "appser": "A210119_05",
+        "appdesc": "Phasellus id est id erat porttitor egestas eget id eros. Etiam volutpat mattis pretium. Morbi et diam sollicitudin, vehicula odio posuere, posuere sem. Proin dictum lectus nec venenatis dictum. Integer at ex nisi. Etiam facilisis nec lectus quis facilisis. Praesent aliquet leo sed fringilla egestas.<br \/>\r\n<br \/>\r\nDonec ullamcorper vel eros a posuere. Vestibulum libero elit, cursus vel ipsum sed, varius auctor orci. In rutrum purus eleifend urna tincidunt, condimentum congue metus molestie. Curabitur fermentum libero sed metus tempus, quis cursus dui sagittis. Pellentesque quam dolor, porttitor ac luctus ac, imperdiet varius ex. Vivamus convallis metus in ante convallis consectetur. Praesent condimentum facilisis ante, vitae lobortis nibh accumsan ac.",
+        "appmain": "app_main_005.png",
+        "appthumb": "app_005.png",
+        "appclient": "Jenny",
+        "appreg": "2021-01-19"
+    },
+    {
+        "appnum": "13",
+        "apptitle": "Beranda",
+        "appser": "A210119_04",
+        "appdesc": "Nulla interdum pellentesque enim sed ultrices. Proin ac elit nunc. Ut sed dapibus dolor. Pellentesque suscipit lorem et orci malesuada hendrerit. Duis gravida porttitor erat, nec viverra ante pulvinar vitae. In vestibulum quam at magna consectetur, at mattis urna mattis. Aenean ut ligula tincidunt, interdum metus vel, ornare turpis. Phasellus vel laoreet est. Nulla commodo purus massa, ut ultrices urna viverra quis.<br \/>\r\n<br \/>\r\nMorbi ante ipsum, interdum sit amet vulputate ut, rhoncus in purus. Vestibulum mollis quis ligula ut vehicula. Praesent a sagittis tellus, a egestas enim. Ut venenatis eget tortor at efficitur. Suspendisse id turpis in sem vehicula viverra. Integer id erat elit. Cras condimentum facilisis pulvinar. Sed quis ex dui. Nam quis quam at lorem porta laoreet. Cras non nisi vel purus semper laoreet. Cras eu auctor risus, in facilisis nisl.",
+        "appmain": "app_main_004.png",
+        "appthumb": "app_004.png",
+        "appclient": "Mitchell",
+        "appreg": "2021-01-19"
+    },
+    {
+        "appnum": "11",
+        "apptitle": "Folida plant store",
+        "appser": "W210119_03",
+        "appdesc": "Suspendisse ullamcorper leo id metus dapibus, eget blandit metus mollis. Aliquam fermentum orci at felis rhoncus posuere. Ut lorem tortor, ornare ut mi eget, porta ullamcorper eros. Pellentesque nec accumsan metus. Suspendisse ante est, tristique eget leo sollicitudin, maximus sodales eros. Nunc et arcu id mi venenatis efficitur id rutrum dolor. Integer condimentum vel odio vitae dignissim. Sed mauris risus, blandit vitae diam id, elementum dictum diam. Aenean accumsan feugiat nulla vitae tempor.<br \/>\r\n<br \/>\r\nNunc turpis arcu, tempus id dolor a, porta tristique ipsum. Praesent interdum scelerisque sodales. Praesent mollis ornare diam vel blandit. Maecenas efficitur, lorem vitae venenatis egestas, nisi turpis dictum metus, ut bibendum turpis lectus eget nisl. Aliquam faucibus ex vel risus elementum, id mollis lorem convallis. Vivamus lacinia malesuada quam, efficitur suscipit lacus laoreet ultricies. Cras nec luctus nisl. Proin odio orci, imperdiet vitae sagittis nec, fringilla in est.",
+        "appmain": "app_main_003.png",
+        "appthumb": "app_003.png",
+        "appclient": "Folida",
+        "appreg": "2021-01-19"
+    },
+    {
+        "appnum": "2",
+        "apptitle": "Portfolio",
+        "appser": "A210119_02",
+        "appdesc": "Suspendisse ac est efficitur, tincidunt ante non, maximus nulla. Sed risus mauris, posuere et tincidunt eget, tincidunt a ante. Curabitur condimentum, diam at rhoncus ultrices, est sapien eleifend risus, quis volutpat sem tellus nec sapien. Quisque egestas urna eu vehicula posuere. Quisque egestas sem tellus, gravida accumsan sapien vulputate vitae. Suspendisse lobortis vitae dui vitae convallis. <br \/>\r\n<br \/>\r\nDuis hendrerit sollicitudin sem, at efficitur ex vulputate in. Phasellus felis augue, blandit nec sem nec, malesuada auctor tellus. Praesent sit amet sodales ex. Aliquam id lectus tellus. Phasellus accumsan turpis non nibh dapibus vulputate. Praesent dictum hendrerit condimentum. Donec a ligula odio. Mauris dictum aliquet leo, eu tempus velit dictum pellentesque. Nullam odio urna, rhoncus nec scelerisque id, feugiat ultrices augue. Maecenas maximus, diam in gravida venenatis, dui mi aliquam justo, id efficitur magna est in urna.",
+        "appmain": "app_main_002.jpg",
+        "appthumb": "app_002.jpg",
+        "appclient": "Dana Pensiun",
+        "appreg": "2021-01-19"
+    },
+    {
+        "appnum": "1",
+        "apptitle": "Tesla Model X",
+        "appser": "A210119_01",
+        "appdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at massa non nulla commodo condimentum vitae sit amet tellus. Mauris sodales porttitor erat in varius. Nullam quis dolor non lacus interdum tempus vitae sodales ligula. Aenean justo quam, blandit sed pulvinar eu, commodo sed dolor. Quisque dignissim eget turpis ac condimentum. Suspendisse eget egestas nulla. Nunc ultricies, nisi ut consectetur feugiat, est mi rhoncus sapien, sed efficitur lacus velit a erat.<\/br><\/br>In ultrices gravida eros ut lacinia. Nulla porttitor gravida tellus, sit amet fringilla ex porttitor a. Suspendisse a urna vehicula nibh sollicitudin porta. Praesent et ullamcorper massa.",
+        "appmain": "app_main_001.png",
+        "appthumb": "app_001.png",
+        "appclient": "Tesla",
+        "appreg": "2021-01-19"
+    }
+]

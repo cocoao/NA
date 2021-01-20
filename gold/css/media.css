@@ -1,0 +1,243 @@
+@media screen and (max-width:1400px){
+  .topMain{width: 100%;}
+}
+
+@media screen and (max-width:1200px){
+  .topMain .bannerBox{height: 30vh;}
+  .topMain .headerBox{height: 30vh;}
+  /* .topMain .sns ul{width: 80%; margin: auto; float: none;}
+  .topMain .sns ul i.fa{width: 30px; height: 30px; font-size: 12px;} */
+  .topMain .gnb li{padding: 0 25px;}
+  .topMain .gnb ul a{font-size: 14px;}
+  .center{padding: 0 15px;}
+  .product .boxRight .productTxt h2{font-size: 25px;}
+  .product .boxRight .productTxt p{font-size: 14px;}
+  .product .boxRight .productTxt p.hide{display: none;}
+  .product .boxRight .productTxt a{width: 45%;}
+  .hasTitle .title .subTit .subLine{width: 30%;}
+  .hasTitle .subTit .subLink{width: 17%;}
+
+  .topMain .logBox a{padding: 0 15px;}
+  .loginBox{width: 60%;}
+  .findInfo{width: 60%;}
+}
+
+@media screen and (max-width:950px){
+  .arrivals .arrivalBox .arrivalCon{width: 32%;}
+  .arrivals .arrivalCon .arrivalTxt h2{font-size: 25px;}
+  .arrivals .arrivalCon .arrivalTxt em{font-size: 11px;}
+  .arrivals .arrivalCon .best a{font-size: 11px; padding: 2px 30px}
+  .arrivals .arrivalCon .best p{font-size: 20px;}
+
+  .fashionBox{padding: 25px 0;}
+  .fashionBox .fashionTxt h2{margin-bottom: 10px; font-size: 20px;}
+  .fashionBox .fashionTxt p{display: none;}
+  .fashionBox .fashionTxt a{padding: 8px 25px; font-size: 12px;}
+  .fashionBox>div>div>h2{font-size: 16px; padding: 5px 0 0 0;}
+  .fashionBox>div>div>em{font-size: 12px;}
+  .fashionBox>div>div>a{font-size: 12px; margin-top: 5px;}
+
+  .topMain .gnb li{padding: 18PX;}
+  .contact .contactBox{flex-direction: column; margin: 20px 0;}
+  .contact .contactBox>div{width: 100%;}
+  .contact .contactBox .map{height: 250px;}
+  .contact .formBox .form input, .contact .formBox .form textarea{padding: 10px;}
+  .contact .formBox .form .message>textarea{height: 250px;}
+  .contact .formBox .form a{padding: 10px 0;}
+
+  /* join us pages media style */
+  .joinBox{width: 80%;}
+  .joinBox label{font-size: 12px;}
+  .joinBox input{font-size: 12px;}
+
+  /* design page style */
+  .designBoxes .designBox{width: 33.33%;}
+
+  /* design input from style */
+  .webDesigninput .titleSer p label{display: none;}
+  .webDesigninput .titleSer p input{width: 100%;}
+
+  /* design detail page style */
+  .designRight{padding-left: 0;}
+  .detailCon{padding-right: 15%;}
+
+  /* web page style */
+  .deweBoxes .deweBox.webBox{width: 50%;}
+
+  /* app page style */
+  .app .appBoxes .appBox,
+  .app .appBoxes .appBox-sizer{width: 33.33%;}
+}
+
+@media screen and (max-width:800px){
+  .topMain{display: flex; flex-direction: column;}
+  .topMain>div:nth-child(1){order: 0;}
+  .topMain>div:nth-child(2){order: 2;}
+  .topMain>div:nth-child(3){order: 1;}
+  .topMain>div:nth-child(4){order: 3;}
+  .topMain .bannerBox{width: 100%; float: none; height: 20vh;}
+  .topMain .bannerBox .slogan h2{font-size: 5.5vw;}
+  .topMain .headerBox{width: 100%; float: none;}
+  .topMain .loginWrap{width: 100%; _float: none; height: 40px; justify-content: center;}
+  /* .topMain .sns ul{width: 50%; height: 40px;} */
+  .topMain .gnb{width: 100%; float: none;}
+  .topMain .gnb ul{width: 100%;}
+  .topMain .gnb ul li{width: 16.66%; padding: 0; justify-content: center;}
+  .product .productBox{flex-direction: column;}
+  .product .productBox .boxLeft{width: 100%; flex-wrap: nowrap;}
+  .product .productBox .boxRight{width: 100%;}
+  .product .boxRight .productTxt{text-align: center;}
+  .product .boxRight .productTxt a{margin: auto;}
+  .fashionBox{flex-wrap: wrap;}
+  .fashionBox>div{width: 50%;}
+  .fashionBox .fashionTxt h2{margin-bottom:0;}
+  .fashionBox .fashionTxt p{display: block;}
+  .hasTitle .title .subTit .subLine{width: 50%;}
+  .hasTitle .subTit .subLink{width: 30%;}
+  .topMain .logBox{height: 40px; font-size: 12px; justify-content: center;}
+  .topMain .logBox a{padding: 0 25px;}
+
+  .contents.about{padding: 40px 0 20px;}
+
+  /* design page style */
+  .designBoxes .designBox .designTxt h2{font-size: 16px; margin-bottom: 0;}
+  .designBoxes .designBox .designTxt em{font-size: 13px;}
+
+  /* design detail page style */
+  .deweLeft{width: 100%; float: none; margin-bottom: 30px;}
+  .deweRight{width: 100%; float: none; padding: 0 15%;}
+
+  .detailCon{padding-right: 0; width: 70%; margin: auto;}
+  .designRight .subWebTxt em, .designRight .subWebTxt em,.designRight .subWebTxt em, .designRight .subAppTxt em{font-size: 12px;}
+
+  /* app page style */
+  .app .appBoxes .appBox{padding: 3px;}
+  .app .appBoxes .appBox>div>h2{font-size: 18px;}
+  .app .appBoxes .appBox>div>a{font-size: 12px;}
+
+}
+
+@media screen and (max-width:700px){
+  .contents .title{width: 100%; float: none; text-align: center;}
+  .contents .title h2{font-size: 30px;}
+  .contents .title .linkBox{width: 100%; display: block;text-align: center;}
+  .contents .title .line{display: none;}
+  .contents .title a{float:none; font-size: 12px; text-align: center; width: 100%;}
+  .arrivals .arrivalBox{flex-direction: column; justify-content: center; align-items: center; padding: 30px 0;}
+  .arrivals .arrivalBox .arrivalCon{width: 70%; margin-bottom: 10px;}
+  .product .productBox{ margin: 30px 0 0;}
+
+  .deweDetail .title{width: 100%; float: none; text-align: center; margin-bottom: 20px;}
+  .deweDetail .title h2{font-size: 30px;}
+  .deweDetail .title .linkBox{width: 100%; display: block;text-align: center;}
+  .deweDetail .title .line{display: none;}
+  .deweDetail .title a{float:none; font-size: 12px; text-align: center; width: 100%;}
+
+  /* join us pages media style */
+  .joinBox{width: 90%;}
+  .joinBox label{display: none;}
+  .joinBox input{width: 100%; padding: 8px;}
+  .joinBox .idInputBox input{width: 74%;}
+  .joinBox .emailInputBox input.email1{width: 40%;}
+  .joinBox .emailInputBox input.email2{width: 52%;}
+  .joinBox .emailInputBox{padding-bottom: 10px;}
+  .joinBox .formBtns{margin-top: 10px;}
+
+  .loginBox{width: 80%;}
+  .findInfo{justify-content: center;}
+  .findInfo a{font-size: 12px;}
+
+  /* web page style */
+  .deweBoxes .deweBox .deweTxt h2{font-size: 18px; line-height: 0.5;}
+  .deweBoxes .deweBox .deweTxt em{font-size: 13px;}
+  .webTabBtns{text-align: center;}
+  .web .webBoxBtns{margin-top: 0;}
+  .web .webBoxBtns a{font-size: 12px; padding: 5px 0;}
+
+}
+
+@media screen and (max-width:600px){
+  /* design page style */
+  .designBoxes .designBox{width:50%;}
+  .btns{flex-wrap: wrap; justify-content: space-between;}
+  .btns .commonBtn{margin: 0; margin-top: 5px; font-size: 12px;}
+  .btns>a:nth-child(1){width: 49.5%;}
+  .btns>a:nth-child(2){width: 49.5%;}
+  .btns>a:nth-child(3){width: 100%; background: #d0af51; color: #fff;}
+
+  .webDesigninput .titleSer p:nth-child(1){width: 100%; margin-bottom: 5px;}
+  .webDesigninput .titleSer p:nth-child(2){width: 49.5%; float: left; margin-right: 1%;}
+  .webDesigninput .titleSer p:nth-child(3){width: 49.5%; float: right; margin-right: 0;}
+  .webDesigninput .titleSer p.domain_input{width: 100%;}
+  .webDesigninput .uploadImgs .uploadBox{width: 100%;}
+  .webDesigninput .uploadImgs .uploadBox {margin: 5px 0;}
+  .designUpload .btns .commonBtn{width: 100%;}
+
+  .detailCon{width: 90%;}
+
+  /* app page style */
+  .app .appBoxes .appBox,
+  .app .appBoxes .appBox-sizer{width: 50%;}
+  .app .appBoxes .appBox>div{padding: 3px;}
+  .app .appBoxes .appBox>div>h2{font-size: 14px;}
+  .webDesigninput .uploadImgs .uploadBox.appImg{width: 100%;}
+}    
+
+@media screen and (max-width:480px){
+  .center{padding: 0 5px;}
+  .topMain .bannerBox .slogan{right: 0; text-align: center;}
+  .topMain .bannerBox .slogan h2{font-size: 7.5vw;}
+  .topMain .bannerBox .slogan hr{display: none;}
+  .topMain .bannerBox .slogan p{letter-spacing: 1px;}
+  .topMain .sns ul{width: 70%;}
+  .topMain .sns ul i.fa{border-radius: 0;background: #aaa;}
+  .topMain .gnb{height:auto; padding: 8px 20px; z-index: 999; position: relative;}
+  .topMain .gnb ul{display: none; position: absolute; top: 100%; left: 0;}
+  .topMain .gnb ul li{float: none; margin: auto; width: 100%; background:#000; height: 45px; border-bottom: 1px solid #d0af51;}
+  .topMain .gnb ul li:first-child{border-top:1px solid #d0af51;}
+  .mobileMenu{display: flex; z-index: 999;}
+
+
+  .arrivals .arrivalBox .arrivalCon{width:90%;}
+  .product .productBox .boxLeft{flex-wrap: wrap;}
+
+  .fashionBox{padding: 20px 0;}  
+  .fashionBox .fashionTxt h2{margin-bottom:10px;}
+  .fashionBox .fashionTxt p{display: none;}
+  .fashionBox>div>div{padding: 5px;}
+  .fashionBox .fashionTxt a{padding: 5px 15px;}
+  .fashionBox>div>div>em{display: none;}
+  
+  .hasTitle .title {margin-bottom: 0;}
+  .hasTitle .title .subTit .subLine{width: 60%;}
+  .hasTitle .subTit .subLink{display: none;}
+  .hasTitle .aboutTxt{padding: 30px 0;}
+  .hasTitle .aboutTxt p:nth-child(1){display: none;}
+
+  /* join us pages media style */
+  .joinBox input{padding: 5px; height: 35px; font-size: 11px;}
+  .joinBox button{height: 35px;font-size: 11px;}
+  .joinBox .emailInputBox span{font-size: 14px;}
+  .loginBox{width: 90%;}
+  .loginBox p input{font-size: 12px; padding: 8px 10px;}
+  .loginBox .loginBtns a{font-size: 12px; padding: 8px 0;}
+
+   /* design page style */
+  .designBoxes .designBox .designTxt{padding: 5px 0;}
+  .designBoxes .designBox .designTxt h2{font-size: 14px;}
+  .designBoxes .designBox .designTxt em{display: none;}
+
+  .designRight{width: 100%; float: none; padding: 0 15%;}
+
+  .detailCon{padding-right: 0; width: 70%; margin: auto;}
+
+  /* design detail page system */
+  .detailDesc{font-size: 12px;}
+  .designRight .webTit h2{font-size: 18px;}
+  .designRight{padding: 0 5%;}
+  .detailCon{width: 90%;}
+
+  /* web page style */
+  .deweBoxes .deweBox.webBox{width: 100%;}
+  
+}

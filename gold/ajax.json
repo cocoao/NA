@@ -1,0 +1,12 @@
+[{
+  "img" : "abc.jpg",
+  "category" : "nature" 
+  },
+  {
+  "img" : "abc1.jpg",
+  "category" : "nature1" 
+  },
+  {
+  "img" : "abc2.jpg",
+  "category" : "nature2" 
+}]
