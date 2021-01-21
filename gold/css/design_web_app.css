@@ -118,9 +118,10 @@
 /*******************************************************************************************************************************
   app detail page style
 *******************************************************************************************************************************/
-.appFrameBox{width: 50%; position: relative; overflow: hidden; height: 545px;}
-.appFrameBox>.appImgBox{position: absolute; width: 100%; height: 100%; top: 0; left: 0; overflow: hidden;}
-.appFrameBox>.appImgBox img{width: 100%;}
-#appMain>li{height: 95%;}
-#appMain>li>img{width: 98%;}
-.appFrameBox>.appMain.appImgBox>li>img{height: 100%;}
+.appFrameBox{width: 50%; position: relative; margin: 0 auto  25px;}
+.appFrameBox img{width: 95%; margin: auto;}
+.appFrameBox span{position: absolute; display: block;z-index: 5;}
+.appFrameBox span.frameTop{width: 100%; height: 30px; top: 0; left: 0; background: url(/gold/img/frame_top.png) top center; background-size: cover;}
+.appFrameBox span.frameLeft{width: 20px; height: 100%; top: 0; left:0 ;background: url(/gold/img/frame_right.png) left center; background-size: cover;}
+.appFrameBox span.frameRight{width: 20px; height: 100%; top: 0; right: 0;background: url(/gold/img/frame_left.png) right center; background-size: cover;}
+.appFrameBox span.frameBottom{width: 100%; height: 30px;bottom: 0; right: 0;background: url(/gold/img/frame_bottom.png) bottom center; background-size: cover;}

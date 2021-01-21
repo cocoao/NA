@@ -67,6 +67,9 @@
   /* app page style */
   .app .appBoxes .appBox,
   .app .appBoxes .appBox-sizer{width: 33.33%;}
+
+  /* app detail page style */
+  .appFrameBox span.frameTop{background-size: contain;}
 }
 
 @media screen and (max-width:800px){
@@ -115,6 +118,8 @@
   .app .appBoxes .appBox>div>h2{font-size: 18px;}
   .app .appBoxes .appBox>div>a{font-size: 12px;}
 
+  /* app detail page style */
+  .appFrameBox span.frameTop{background-size: cover;}
 }
 
 @media screen and (max-width:700px){
@@ -240,4 +245,8 @@
   /* web page style */
   .deweBoxes .deweBox.webBox{width: 100%;}
   
+  /* app detail page style */
+  .appFrameBox{width: 70%;}
+  .appFrameBox span.frameTop{_background-size: contain;}
+  .appFrameBox span.frameBottom{_background-size: contain;}
 }
