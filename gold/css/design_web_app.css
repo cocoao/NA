@@ -51,16 +51,20 @@
 
 /* design & web detail right box style */
 .deweRight{width: 40%; height: auto; float: right; padding-left: 5%;}
-.deweRight .webTit{width: 100%; height: auto; padding: 0 0 10px 0; border-bottom: 1px solid #d0af51; display: flex; justify-content: space-between; align-items: baseline;}
-.deweRight .webTit h2{font-size: 22px; font-weight: 400; text-transform: uppercase;}
-.deweRight .webTit a{color: #d0af51;}
-.deweRight .webTit a:hover{text-decoration: underline;}
+.deweRight .webTit,
+.deweRight .appTit{width: 100%; height: auto; padding: 0 0 10px 0; border-bottom: 1px solid #d0af51; display: flex; justify-content: space-between; align-items: baseline;}
+.deweRight .webTit h2,
+.deweRight .appTit h2{font-size: 22px; font-weight: 400; text-transform: uppercase;}
+.deweRight .webTit a,
+.deweRight .appTit a{color: #d0af51;}
+.deweRight .webTit a:hover,
+.deweRight .appTit a:hover{text-decoration: underline;}
 
 .detailWeb{padding-bottom: 20px;}
 .deweRight .webLinks,
 .deweRight .appLinks{width: 100%; height: auto; display: flex; padding: 10px 0; border-bottom: 1px dotted #838383;}
 .deweRight .subWebImg,.deweRight .subAppImg{width: 40%; height: auto; overflow: hidden;}
-.deweRight .subWebImg img{width: 100%;}
+.deweRight .subWebImg img,.deweRight .subAppImg img{width: 100%;}
 .deweRight .subWebTxt,
 .deweRight .subAppTxt{width: 60%; padding-left: 10px; display: flex; flex-direction: column; justify-content: center;}
 .deweRight .subWebTxt a,.deweRight .subAppTxt a{font-weight: 600; font-size: 16px; color: #d0af51;}
@@ -109,3 +113,14 @@
 .app .appBoxes .appBox>div>a{width: 100%; _text-align: center; padding: 7px 0; border: 1px solid #d0af51; background: #d0af51; color: #fff; transition: all 0.4s;}
 .app .appBoxes .appBox>div>a:hover{background: #fff; color: #d0af51;}
 .app .appBoxes .appBox img{width: 100%;}
+
+
+/*******************************************************************************************************************************
+  app detail page style
+*******************************************************************************************************************************/
+.appFrameBox{width: 50%; position: relative; overflow: hidden; height: 545px;}
+.appFrameBox>.appImgBox{position: absolute; width: 100%; height: 100%; top: 0; left: 0; overflow: hidden;}
+.appFrameBox>.appImgBox img{width: 100%;}
+#appMain>li{height: 95%;}
+#appMain>li>img{width: 98%;}
+.appFrameBox>.appMain.appImgBox>li>img{height: 100%;}

@@ -167,7 +167,7 @@
           </div>
 
           <?php
-          // include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';
+          // include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php'; close해줘야 꺼짐(페이지 넘어가면 꺼짐)
           $sql="select * from gold_app order by GOLD_APP_num desc limit 3";
           $app_result = mysqli_query($dbConn,$sql);
 
