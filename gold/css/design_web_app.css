@@ -125,3 +125,7 @@
 .appFrameBox span.frameLeft{width: 20px; height: 100%; top: 0; left:0 ;background: url(/gold/img/frame_right.png) left center; background-size: cover;}
 .appFrameBox span.frameRight{width: 20px; height: 100%; top: 0; right: 0;background: url(/gold/img/frame_left.png) right center; background-size: cover;}
 .appFrameBox span.frameBottom{width: 100%; height: 30px;bottom: 0; right: 0;background: url(/gold/img/frame_bottom.png) bottom center; background-size: cover;}
+
+.appStoreBtns{width: 100%; height: auto; text-align: center; margin-bottom: 25px;}
+.appStoreBtns a{width: 30%; display: inline-block;}
+.appStoreBtns a img{width: 100%;}

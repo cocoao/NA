@@ -249,4 +249,7 @@
   .appFrameBox{width: 70%;}
   .appFrameBox span.frameTop{_background-size: contain;}
   .appFrameBox span.frameBottom{_background-size: contain;}
+
+  .appStoreBtns a{width: 40%;}
+
 }
