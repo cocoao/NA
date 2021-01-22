@@ -1,11 +1,16 @@
-네비게이션 활성화 인덱스 변경
-design_upload.js 함수 리펙토링
-파일정리
+*네비게이션 활성화 인덱스 변경
+*design_upload.js 함수 리펙토링
+*파일정리
 design_input_form.php 인풋 옵셋 맞춤
 메인페이지 디자인 부분 글자 문단 자르기
-웹 페이지 완료 후 전체 파일 구조설계 및 1차 호스팅
+*웹 페이지 완료 후 전체 파일 구조설계 및 1차 호스팅
 web page js load more 기능 리펙토링
 index.php 파일 fashion 위치 클래스 이름 변경
 resize 함수 한번만 실행 기능
+앱 데이터베이스 메인 사진 2장 추가 테이블 컬럼 추가
+앱 상품 페이지 메인 사진 2장 추가 업로드 화면 제작
+앱 데이터베이스 구글플레이, 앱스토어 주소 테이블 컬럼 추가
+앱 데이터베이스 구글플레입, 앱스토어 주소 입력 화면 제작
 
-    include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';
+
+include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';

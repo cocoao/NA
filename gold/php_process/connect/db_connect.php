@@ -1,6 +1,6 @@
 <?php
   $id="";
-  $pass='';
+  $pass='!';
   $db_name='';
   $host='localhost';
 
