@@ -1,0 +1,33 @@
+/* qna table style */
+.qnaBoxes .qnaTable{width: 80%; height: auto; margin: auto;}
+.qnaBoxes .qnaTable li:nth-child(odd){background: #efefef;}
+.qnaBoxes .qnaTable li.qnaTitle{width: 100%; height: auto; background:#d0af51;}
+
+.qnaBoxes .qnaTable li span{color: #fff; text-align: center; display: block; float: left; font-family: 'Noto Sans KR', sans-serif; font-weight: 300; padding: 10px 0;}
+/* .qnaBoxes .qnaTable li.qnaContents{border-bottom: 1px solid #d0af51;} */
+.qnaBoxes .qnaTable li.qnaContents:last-child{border-bottom: 1px solid #d0af51;}
+.qnaBoxes .qnaTable li.qnaContents span,
+.qnaBoxes .qnaTable li.qnaContents span a{color: #838383;}
+.qnaBoxes .qnaTable li.qnaContents span.qnaTit{text-align: left;}
+.qnaBoxes .qnaTable li span.qnaNum{width: 10%;}
+.qnaBoxes .qnaTable li span.qnaId{width: 15%;}
+.qnaBoxes .qnaTable li span.qnaTit{width: 50%;}
+.qnaBoxes .qnaTable li span.qnaReg{width: 15%;}
+.qnaBoxes .qnaTable li span.qnaHit{width: 10%;}
+
+/* qna search and paging number style */
+.qnaBoxes .searchPaging{width: 80%; height: auto; margin: auto;}
+.qnaBoxes .searchPaging>div{width: 50%; height: auto; float: left; margin-top: 10px; }
+.qnaBoxes .searchSlect{width: 20%; border-radius: 0; outline: 0; padding:5px; display: block; height: 30px; border: 1px solid #d0af51; float: left; color: #d0af51;}
+.qnaBoxes .qnaSearchInput{width: 50%; height: 30px; padding: 5px; border: 1px solid #d0af51; display: block; float: left; margin: 0 0 0 5px;}
+.qnaBoxes .qnaSearchBtn{width: 10%; height: 30px; border: 1px solid #d0af51; background: #d0af51; color: #fff; font-size: 14px;}
+
+.qnaBoxes .searchPaging>div.paging{display: flex; justify-content: flex-end;}
+.qnaBoxes .paging span{color: #d0af51; display: flex; float: left; width: 30px; height: 30px; border: 1px solid #d0af51; justify-content: center; align-items: center; margin-left: 5px; transition: all 0.4s;}
+.qnaBoxes .paging span:hover,
+.qnaBoxes .paging span.active{color: #fff; background: #d0af51;}
+
+.writeBox{width: 80%; border: 1px solid #d0af51; padding: 5px; margin: 50px auto 0 ;}
+.writeBox input{width: 80%; border: 1px solid #d0af51; padding: 5px; height: 30px;}
+.writeBox input:nth-child(2){height: 100px;}
+.writeBox .write{width: 20%; height: 130px;}
