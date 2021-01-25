@@ -25,7 +25,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="/gold/js/custom.js" defer></script>
   <script src="/gold/js/web_design_page.js" defer></script>
-  <script src="/gold/js/qna_ajax.js" defer></script>
+
 </head>
 
 <body>
@@ -98,22 +98,22 @@
     <?php include $_SERVER["DOCUMENT_ROOT"]."/gold/include/footer.php" ?>
   </div>
   <script>
-  const qnaSubmit = document.querySelector(".qnaSubmit");
-  qnaSubmit.addEventListener('click',insertQna);
+    const qnaSubmit = document.querySelector(".qnaSubmit");
+    qnaSubmit.addEventListener('click',insertQna);
 
-  function insertQna(){
-  if(!document.writeForm.qnaTitle.value){
-    alert("제목을 입력해 주세요");
-    document.writeForm.qnaTitle.focus();
-    return;
-  }
-  if(!document.writeForm.qnaTxt.value){
-    alert("내용을 입력해 주세요");
-    document.writeForm.qnaTxt.focus();
-    return;
-  }
-  document.writeForm.submit();
-}
+    function insertQna(){
+      if(!document.writeForm.qnaTitle.value){
+        alert("제목을 입력해 주세요");
+        document.writeForm.qnaTitle.focus();
+        return;
+      }
+      if(!document.writeForm.qnaTxt.value){
+        alert("내용을 입력해 주세요");
+        document.writeForm.qnaTxt.focus();
+        return;
+      }
+      document.writeForm.submit();
+    }
   </script>
 </body>
 </html>

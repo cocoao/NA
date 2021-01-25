@@ -70,6 +70,10 @@
 
   /* app detail page style */
   .appFrameBox span.frameTop{background-size: contain;}
+
+  /* qna page style */
+  .qnaBoxes .searchSlect{width: 25%;}
+  .qnaBoxes .qnaSearchInput{width: 60%;}
 }
 
 @media screen and (max-width:800px){
@@ -120,6 +124,14 @@
 
   /* app detail page style */
   .appFrameBox span.frameTop{background-size: cover;}
+
+  /* qna page style */
+  .qnaBoxes .searchPaging>div{width:100%}
+  .qnaBoxes .qnaSearch{display: flex; justify-content: space-evenly;}
+  .qnaBoxes .qnaSearchBtn{width: 14%;}
+  .qnaBoxes .searchPaging>div.paging{justify-content: center;}
+
+  .qnaBoxes .writeBox p label,.qnaBoxes .writeBox p input,.qnaBoxes .writeBox p textarea,.qnaBoxes .writeBox button{font-size: 12px;}
 }
 
 @media screen and (max-width:700px){
@@ -159,6 +171,10 @@
   .web .webBoxBtns{margin-top: 0;}
   .web .webBoxBtns a{font-size: 12px; padding: 5px 0;}
 
+  /* qna page style */
+  .qnaBoxes .qnaTable li span{font-size: 12px;}
+  .qnaBoxes .searchSlect,.qnaBoxes .qnaSearchInput,.qnaBoxes .qnaSearchBtn{font-size: 12px; _height: 25px;}
+  
 }
 
 @media screen and (max-width:600px){
@@ -186,6 +202,12 @@
   .app .appBoxes .appBox>div{padding: 3px;}
   .app .appBoxes .appBox>div>h2{font-size: 14px;}
   .webDesigninput .uploadImgs .uploadBox.appImg{width: 100%;}
+
+  /* qna page style */
+  .qnaBoxes .qnaTable li span.qnaReg{display: none;}
+  .qnaBoxes .qnaTable li span.qnaId{width: 20%;}
+  .qnaBoxes .qnaTable li span.qnaTit{width: 55%;}
+  .qnaBoxes .qnaTable li span.qnaHit{width: 15%;}
 }    
 
 @media screen and (max-width:480px){
@@ -252,4 +274,18 @@
 
   .appStoreBtns a{width: 40%;}
 
+  /* qna page style */
+  .qnaBoxes .qnaTable{width: 90%;}
+  .qnaBoxes .qnaTable li span.qnaHit{display: none;}
+  .qnaBoxes .qnaTable li span.qnaNum{width: 15%;}
+  .qnaBoxes .qnaTable li span.qnaId{width: 25%;}
+  .qnaBoxes .qnaTable li span.qnaTit{width: 60%;}
+
+  .qnaBoxes .qnaSearch{flex-wrap: wrap; justify-content: space-between;}
+  .qnaBoxes .searchPaging{width: 90%;}
+  .qnaBoxes .searchSlect{width: calc(30% - 2px);}
+  .qnaBoxes .qnaSearchInput{width: 70%; margin: 0;}
+  .qnaBoxes .qnaSearchBtn{width: 100%; margin-top: 2px;}
+
+  .qnaBoxes .writeBox{width: 90%; margin: 25px auto 0;}
 }
