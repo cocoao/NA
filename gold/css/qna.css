@@ -42,3 +42,9 @@
 .qnaBoxes .writeBox p input{width: 80%; _height: 30px; border: 1px solid #d0af51; color: #d0af51; display: flex; outline: 0; padding: 0 5px;}
 .qnaBoxes .writeBox p textarea{width: 100%; height: 150px; padding: 5px; border: 1px solid #d0af51; outline: 0; resize: none;}
 .qnaBoxes .writeBox button{border: 1px solid #d0af51; background: #d0af51; color: #fff; text-align: center; padding: 5px 30px; margin-top: 5px; float:right;}
+
+/* qna view page style */
+.qnaView .writerInfo{width: 80%; margin: auto;}
+.qnaView .writerInfo p{color: #d0af51; font-weight: 300; padding: 0 5px;}
+.qnaView .writeBox{margin: 5px auto 0;}
+.qnaView button{margin-left: 5px;}
