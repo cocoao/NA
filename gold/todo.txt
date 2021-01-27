@@ -11,6 +11,8 @@ resize 함수 한번만 실행 기능
 앱 상품 페이지 메인 사진 2장 추가 업로드 화면 제작
 앱 데이터베이스 구글플레이, 앱스토어 주소 테이블 컬럼 추가
 앱 데이터베이스 구글플레입, 앱스토어 주소 입력 화면 제작
-
+페이지네이션 갯수 한정
+네이버, 카카오 등으로 로그인하기
+조회수 증가
 
 include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';

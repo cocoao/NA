@@ -41,17 +41,38 @@
           </div>
         </div><!--contact end of common title -->
         <div class="qnaBoxes deweBoxes qnaView">
+
+        <?php
+        $ans_num = $_GET['num'];
+
+        include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';
+        $sql = "select * from gold_qna where GOLD_QNA_num=$ans_num";
+
+        $ans_result = mysqli_query($dbConn,$sql);
+        $ans_row = mysqli_fetch_array($ans_result);
+        
+        $ans_id = $ans_row['GOLD_QNA_id'];
+        $ans_tit = $ans_row['GOLD_QNA_tit'];
+        $ans_con = $ans_row['GOLD_QNA_con'];
+        $ans_reg = $ans_row['GOLD_QNA_reg'];
+        $ans_hit = $ans_row['GOLD_QNA_hit'];
+
+        $new_hit = $ans_hit + 1;
+
+        $sql = "update gold_qna set GOLD_QNA_hit='$new_hit' where GOLD_QNA_num=$ans_num";
+        mysqli_query($dbConn,$sql); 
+        ?>
           <div class="writerInfo">
-            <p>Posted By cocoao NO. 11 / 2021-02-02 / 95 Hits</p>
+            <p>Posted By <?=$ans_id?> NO. <?=$ans_num?> / <?=$ans_reg?> / <?=$new_hit?> Hits</p>
           </div>
           <div class="writeBox clear">
-          <form action="/gold/php_process/pages/qna_insert.php?id=<?=$userid?>" method="post" class="writeForm" name="writeForm">
+          <form action="/gold/php_process/pages/qna_update.php?num=<?=$ans_num?>" method="post" class="writeForm" name="ansForm">
                 <p class="qnaTitInput">
-                  <label for="qnaTitle">제목</label>
-                  <input type="text" name="qnaTitle" id="qnaTitle" placeholder="제목을 입력해 주세요">
+                  <label for="ansTitle">제목</label>
+                  <input type="text" name="ansTitle" id="ansTitle" placeholder="제목을 입력해 주세요" value="<?=$ans_tit?>">
                 </p>
                 <p class="qnaTxtInput">
-                  <textarea name="qnaTxt" placeholder="내용을 입력해 주세요"></textarea>
+                  <textarea name="ansTxt" placeholder="내용을 입력해 주세요"><?=$ans_con?></textarea>
                 </p>
               </form>
               <?php
@@ -61,11 +82,20 @@
               <?php
               } else {
               ?>
-              <button type="submit" class="">돌아가기</button>
-              <button type="submit" class="">수정</button>
+              <a href="/gold/pages/qna/qna.php">돌아가기</a>
+              <button type="submit" class="ansSubmit">수정</button>
               <?php
               }
               ?>
+          </div><!--end of write box-->
+
+          <div class="answerBox">
+            <form action="" method="post" name="ansInputForm" class="ansInputForm">
+              <textarea name="ansInputTxt" placeholder="답글을 작성해주세요"></textarea>
+              <p class="ansBtn">
+                <button type="submit">답글달기</button>
+              </p>
+            </form>
           </div>
         </div>
       </div><!--end of center-->
@@ -73,5 +103,27 @@
     <?php include $_SERVER["DOCUMENT_ROOT"]."/gold/include/about.php" ?>
     <?php include $_SERVER["DOCUMENT_ROOT"]."/gold/include/footer.php" ?>
   </div>
+  <script>
+    const qnaSubmit = document.querySelector(".ansSubmit");
+    qnaSubmit.addEventListener('click',insertAns);
+
+    function plzLogin(){
+    alert('글쓰기를 하시려면 로그인이 필요합니다');
+    }
+
+    function insertAns(){
+    if(!document.ansForm.ansTitle.value){
+    alert("제목을 입력해 주세요");
+    document.ansForm.ansTitle.focus();
+    return;
+    }
+    if(!document.ansForm.ansTxt.value){
+    alert("내용을 입력해 주세요");
+    document.ansForm.ansTxt.focus();
+    return;
+    }
+    document.ansForm.submit();
+    }
+  </script>
 </body>
 </html>
