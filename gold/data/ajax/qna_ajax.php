@@ -31,7 +31,23 @@
 <li class="qnaContents clear">
   <span class="qnaNum"><?=$qna_res_num?></span>
   <span class="qnaId"><?=$qna_res_id?></span>
+
+  <?php
+  $sql = "select * from gold_ans where GOLD_ANS_QNA_num=$qna_res_num order by GOLD_ANS_num desc";
+
+  $ans_res = mysqli_query($dbConn, $sql);
+  $is_ans_res = mysqli_num_rows($ans_res);
+
+  if(!$is_ans_res){
+  ?>
   <span class="qnaTit"><a href="/gold/pages/qna/qna_view.php?num=<?=$qna_res_num?>"><?=$qna_res_tit?></a></span>
+  <?php 
+  } else {
+  ?>
+  <span class="qnaTit"><a href="/gold/pages/qna/qna_view.php?num=<?=$qna_res_num?>"><?=$qna_res_tit?> [답변완료]</a></span>
+  <?php
+  }
+  ?>
   <span class="qnaReg"><?=$qna_res_reg?></span>
   <span class="qnaHit"><?=$qna_res_hit?></span>
 </li>
