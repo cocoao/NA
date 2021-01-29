@@ -51,13 +51,23 @@
           </div><!--end of qna table-->
           <div class="searchPaging clear">
             <div class="search">
-              <form action="abc.php" name="qnaSearch" class="clear qnaSearch">
+              <form action="/gold/pages/qna/qna_search_result.php" method="post" name="qnaSearch" class="clear qnaSearch">
                 <select name="searchSlect" id="" class="searchSlect">
                   <option value="qnaSearchID">아이디</option>
-                  <option value="qnaSearchID">제목</option>
+                  <option value="qnaSearchTitle">제목</option>
                 </select>
                 <input type="text" name="qnaSearchInput" placeholder="검색어를 입력해 주세요" class="qnaSearchInput">
-                <button type="button" class="qnaSearchBtn"><i class="fa fa-search"></i></button>
+                <button type="button" class="qnaSearchBtn" onclick="search_check()"><i class="fa fa-search"></i></button>
+                <script>
+                  function search_check(){
+                    if(!document.qnaSearch.qnaSearchInput.value){
+                      alert('검색어를 입력해 주세요');
+                      document.qnaSearch.qnaSearchInput.focus();
+                      return;
+                    }
+                    document.qnaSearch.submit();
+                  }
+                </script>
               </form>
             </div>
             <div class="paging">

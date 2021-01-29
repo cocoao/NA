@@ -212,15 +212,46 @@
             </div>
           </div>
           <div class="formBox">
-            <form action="abc.php" method="POST" class="form" name="form">
+            <form action="/gold/php_process/pages/msg_insert.php" method="POST" class="form" name="msgForm">
               <p class="nameMail">
-                <input type="text" placeholder="NAME">
-                <input type="text" placeholder="EMAIL">
+                <input type="text" name="msgName" placeholder="NAME">
+                <input type="text" name="msgEmail" placeholder="EMAIL">
               </p>
-              <p class="subject"><input type="text" placeholder="SUBJECT"></p>
-              <p class="message"><textarea placeholder="MESSAGE"></textarea></p>
-              <a href="#">SEND MESSAGE</a>
+              <p class="subject"><input type="text" name="msgTit"placeholder="SUBJECT"></p>
+              <p class="message"><textarea placeholder="MESSAGE" name="msgTxt"></textarea></p>
+              <a href="/gold/index.php" class="msgSend">SEND MESSAGE</a>
             </form>
+
+            <script>
+              let msgSendBtn = document.querySelector(".msgSend");
+              msgSendBtn.addEventListener('click',msgSend);
+
+              function msgSend(e){
+                e.preventDefault();
+              if(!document.msgForm.msgName.value){
+                alert("이름을 입력해 주세요");
+                document.msgForm.msgName.focus();
+                return;
+              }
+              if(!document.msgForm.msgEmail.value){
+                alert("이메일을 입력해 주세요");
+                document.msgForm.msgEmail.focus();
+                return;
+              }
+              if(!document.msgForm.msgTit.value){
+                alert("제목을 입력해 주세요");
+                document.msgForm.msgTit.focus();
+                return;
+              }
+              if(!document.msgForm.msgTxt.value){
+                alert("내용을 입력해 주세요");
+                document.msgForm.msgTxt.focus();
+                return;
+              }
+
+              document.msgForm.submit();
+            }
+            </script>
           </div>
         </div>
       </div>
@@ -260,7 +291,6 @@
         cutTxt()
       }
     });
-
 
   </script>
 </body>

@@ -131,7 +131,8 @@
   .qnaBoxes .qnaSearchBtn{width: 14%;}
   .qnaBoxes .searchPaging>div.paging{justify-content: center;}
 
-  .qnaBoxes .writeBox p label,.qnaBoxes .writeBox p input,.qnaBoxes .writeBox p textarea,.qnaBoxes .writeBox button,.qnaBoxes .writeBox a{font-size: 12px;}
+  .qnaBoxes .writeBox p label,.qnaBoxes .writeBox p input,.qnaBoxes .writeBox p textarea,.qnaBoxes .writeBox button,.qnaBoxes .writeBox a,
+  .qnaBoxes .writeBox .qnaGuide span{font-size: 12px;}
 
   /* qna view page style */
   .qnaView .answerBox .ansInputForm textarea{font-size: 12px;}
@@ -186,7 +187,7 @@
   /* design page style */
   .designBoxes .designBox{width:50%;}
   .btns{flex-wrap: wrap; justify-content: space-between;}
-  .btns .commonBtn{margin: 0; margin-top: 5px; font-size: 12px;}
+  .btns .commonBtn{margin: 0; _margin-top: 5px; font-size: 12px; width: 49.5%;}
   .btns>a:nth-child(1){width: 49.5%;}
   .btns>a:nth-child(2){width: 49.5%;}
   .btns>a:nth-child(3){width: 100%; background: #d0af51; color: #fff;}

@@ -13,6 +13,9 @@ resize 함수 한번만 실행 기능
 앱 데이터베이스 구글플레입, 앱스토어 주소 입력 화면 제작
 페이지네이션 갯수 한정
 네이버, 카카오 등으로 로그인하기
-조회수 증가
+*조회수 증가
+모바일 select box 아래 화살표 표시
+Q&A view <br> 부분 안보이게
+메세지 입력 기능
 
 include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';
