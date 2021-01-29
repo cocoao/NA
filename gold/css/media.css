@@ -115,7 +115,7 @@
   .deweRight{width: 100%; float: none; padding: 0 15%;}
 
   .detailCon{padding-right: 0; width: 70%; margin: auto;}
-  .designRight .subWebTxt em, .designRight .subWebTxt em,.designRight .subWebTxt em, .designRight .subAppTxt em{font-size: 12px;}
+  .designRight .subWebTxt em, .designRight .subAppTxt em{font-size: 12px;}
 
   /* app page style */
   .app .appBoxes .appBox{padding: 3px;}
@@ -275,8 +275,8 @@
 
   /* design detail page system */
   .detailDesc{font-size: 12px;}
-  .designRight .webTit h2{font-size: 18px;}
-  .designRight{padding: 0 5%;}
+  .deweRight .webTit h2{font-size: 18px;}
+  .deweRight{padding: 0 5%;}
   .detailCon{width: 90%;}
 
   /* web page style */
