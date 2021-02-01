@@ -50,7 +50,7 @@
         ?>
               <a href="/gold/pages/login/join_form.php"><?=$userid?>[<?=$userpoint?>]</a>
               <a href="/gold/php_process/login/logout.php">LOGOUT</a>
-              <a href="#">ADMIN</a>
+              <a href="/gold/pages/admin/admin.php">ADMIN</a>
         <?php
             } else {
         ?>
