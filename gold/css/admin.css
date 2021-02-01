@@ -1,11 +1,12 @@
 /* admin tab panel style */
-.admin .adminTabs{width: 100%; height: auto; text-align: center;}
+.admin .adminTabs{width: 80%; height: auto; text-align: center; margin: auto;}
 .admin .adminTabs button{border: 1px solid #d0af51; color: #d0af51; font-weight: 600; background: #fff; padding: 10px 30px; transition: all 0.4s;}
+.admin .adminTabs button i{font-style: normal; display: none;}
 .admin .adminTabs button:hover,
 .admin .adminTabs button.active{background: #d0af51; color: #fff;}
 
 /* message panel style */
-.msgTab .msgTable{width: 80%; height: auto; margin: 50px auto;}
+.msgTab .msgTable{width: 80%; height: auto; margin: 50px auto 10px;}
 .msgTab .msgTable li{width: 100%; height: auto; margin: auto;}
 .msgTab .msgTable li:nth-child(odd){background: #efefef;}
 .msgTab .msgTable li.msgTitle{background:#d0af51;}
@@ -21,3 +22,12 @@
 .msgTab .msgTable span.msgDelete{width: 10%;}
 .msgTab .msgTable li.msgContents:last-child{border-bottom: 1px solid #d0af51}
 .msgTab .msgTable span.msgDelete a{background: #d0af51; color: #fff; padding: 5px 10px; font-size: 12px;}
+
+/* admin view page style */
+.adminViewBtns{width: 80%;height: auto; margin: auto; text-align: right;}
+.adminViewBtns a{padding: 5px 15px; border: 1px solid #d0af51; display: inline-block; background: #d0af51; color: #fff; transition: all 0.4s; margin-left: 0;}
+.adminViewBtns a:hover{background: #fff; color: #d0af51;}
+.adminView div.writeBox{margin-bottom: 10px;}
+
+.adminSearch{display: flex; justify-content: flex-end;}
+.adminPanel .searchPaging>div{float: right;}

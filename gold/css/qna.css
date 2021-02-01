@@ -16,16 +16,16 @@
 .qnaBoxes .qnaTable li span.qnaHit{width: 10%;}
 
 /* qna search and paging number style */
-.qnaBoxes .searchPaging{width: 80%; height: auto; margin: auto;}
-.qnaBoxes .searchPaging>div{width: 50%; height: auto; float: left; margin-top: 10px; }
-.qnaBoxes .searchSlect{width: 20%; border-radius: 0; outline: 0; padding:5px; display: block; height: 30px; border: 1px solid #d0af51; float: left; color: #d0af51;}
-.qnaBoxes .qnaSearchInput{width: 50%; height: 30px; padding: 5px; border: 1px solid #d0af51; display: block; float: left; margin: 0 0 0 5px;}
-.qnaBoxes .qnaSearchBtn{width: 10%; height: 30px; border: 1px solid #d0af51; background: #d0af51; color: #fff; font-size: 14px;}
+.searchPaging{width: 80%; height: auto; margin: auto;}
+.searchPaging>div{width: 50%; height: auto; float: left; margin-top: 10px; }
+.searchSlect{width: 20%; border-radius: 0; outline: 0; padding:5px; display: block; height: 30px; border: 1px solid #d0af51; float: left; color: #d0af51;}
+.adminSearchInput,.qnaSearchInput{width: 50%; height: 30px; padding: 5px; border: 1px solid #d0af51; display: block; float: left; margin: 0 0 0 5px;}
+.adminSearchBtn,.qnaSearchBtn{width: 10%; height: 30px; border: 1px solid #d0af51; background: #d0af51; color: #fff; font-size: 14px;}
 
-.qnaBoxes .searchPaging>div.paging{display: flex; justify-content: flex-end;}
-.qnaBoxes .paging span{color: #d0af51; display: flex; float: left; width: 30px; height: 30px; border: 1px solid #d0af51; justify-content: center; align-items: center; margin-left: 5px; transition: all 0.4s;}
-.qnaBoxes .paging span:hover,
-.qnaBoxes .paging span.active{color: #fff; background: #d0af51;}
+.searchPaging>div.paging{display: flex; justify-content: flex-end;}
+.paging span{color: #d0af51; display: flex; float: left; width: 30px; height: 30px; border: 1px solid #d0af51; justify-content: center; align-items: center; margin-left: 5px; transition: all 0.4s;}
+.paging span:hover,
+.paging span.active{color: #fff; background: #d0af51;}
 
 /* qna write box style */
 .qnaBoxes .writeBox{width: 80%; margin: 50px auto 0 ;}

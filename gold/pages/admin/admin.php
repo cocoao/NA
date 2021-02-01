@@ -13,6 +13,7 @@
   <!-- design form style css -->
   <link rel="stylesheet" href="/gold/css/design_web_app.css">
 
+  <link rel="stylesheet" href="/gold/css/qna.css">
   <link rel="stylesheet" href="/gold/css/admin.css">
 
   <!-- animation css link -->
@@ -34,9 +35,9 @@
     <?php
     if($userlevel != 1){
     ?>
-    <div class="deny">
-      <p>관리자 페이지입니다. 관리자로 로그인 해 주세요.</p>
-      <a href="/gold/pages/login/login_form.php">로그인</a>
+    <div class="deny" style="width:100%; height:auto; text-align:center; padding:50px 0; font-family:'Noto Sans KR'; color:#838383;">
+      <p style="font-size:22px; font-weight:500;">관리자 페이지입니다. 관리자로 로그인 해 주세요.</p>
+      <a href="/gold/pages/login/login_form.php" style="color:#fff; background:#d0af51; padding:8px 35px; margin-top:15px; display:inline-block;">로그인</a>
     </div>
     <?php  
     } else {
@@ -44,11 +45,11 @@
     <section class="contents admin hasTitle">
       <div class="center">
         <div class="adminTabs">
-          <button type="button" class="active">메세지 관리</button>
-          <button type="button">회원 관리</button>
-          <button type="button">WEB 관리</button>
-          <button type="button">APP 관리</button>
-          <button type="button">Q&A 관리</button>
+          <button type="button" class="active"><i class="fa fa-envelope"></i><b>메세지 관리</b></button>
+          <button type="button"><i class="fa fa-user"></i><b>회원 관리</b></button>
+          <button type="button"><i class="fa fa-desktop"></i><b>WEB 관리</b></button>
+          <button type="button"><i class="fa fa-mobile"></i><b>APP 관리</b></button>
+          <button type="button"><i class="fa fa-comment"></i><b>Q&A 관리</b></button>
         </div>
         <div class="msgTab deweBoxes adminPanel">
           <div class="msgTable">
@@ -76,16 +77,38 @@
               <li class="msgContents clear">
                 <span class="msgNum"><?=$msg_num?></span>
                 <span class="msgId"><?=$msg_name?></span>
-                <span class="msgTit"><a href="#"><?=$msg_tit?></a></span>
+                <span class="msgTit"><a href="/gold/pages/admin/admin_view.php?num=<?=$msg_num?>"><?=$msg_tit?></a></span>
                 <span class="msgReg"><?=$msg_reg?></span>
                 <span class="msgEmail"><?=$msg_email?></span>
-                <span class="msgDelete"><a href="#">삭제</a></span>
+                <span class="msgDelete"><a href="/gold/php_process/pages/msg_delete.php?num=<?=$msg_num?>">삭제</a></span>
               </li>
               <?php
                 }
               ?>
             </ul>
           </div>
+          <div class="searchPaging clear">
+            <div class="search">
+              <form action="/gold/pages/admin/msg_search_result.php" method="post" name="adminSearch" class="clear adminSearch">
+                <select name="searchSlect" id="" class="searchSlect">
+                  <option value="adminSearchID">이름</option>
+                  <option value="adminSearchTitle">제목</option>
+                </select>
+                <input type="text" name="adminSearchInput" placeholder="검색어를 입력해 주세요" class="adminSearchInput">
+                <button type="button" class="adminSearchBtn" onclick="admin_search_check()"><i class="fa fa-search"></i></button>
+                <script>
+                  function admin_search_check(){
+                    if(!document.adminSearch.adminSearchInput.value){
+                      alert('검색어를 입력해 주세요');
+                      document.adminSearch.adminSearchInput.focus();
+                      return;
+                    }
+                    document.adminSearch.submit();
+                  }
+                </script>
+              </form>
+            </div><!--end of search-->
+          </div><!--end of searchPaging-->
         </div><!--end of msg tab-->
         <div class="memberTab adminPanel">memberTab</div>
         <div class="webTab adminPanel">webTab</div>
