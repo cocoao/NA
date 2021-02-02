@@ -1,9 +1,9 @@
 <meta charset='utf-8'>
 <?php
- $msg_num = $_GET['num'];
+ $mem_num = $_GET['num'];
 
  include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';
- $sql = "delete from gold_msg where GOLD_MSG_num=$msg_num";
+ $sql = "delete from gold_mem where GOLD_mem_num=$mem_num";
 
  mysqli_query($dbConn, $sql);
 

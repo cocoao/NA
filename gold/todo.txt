@@ -16,6 +16,7 @@ resize 함수 한번만 실행 기능
 *조회수 증가
 모바일 select box 아래 화살표 표시
 Q&A view <br> 부분 안보이게
-메세지 입력 기능
+*메세지 입력 기능
+포인트 증가 기능
 
 include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';

@@ -78,12 +78,12 @@
   /* admin page style */
   .admin .adminTabs button{padding: 10px 20px;}
 
-  .msgTab .msgTable span.msgNum{width: 10%;}
-  .msgTab .msgTable span.msgId{width: 15%;}
-  .msgTab .msgTable span.msgTit{width: 40%;}
-  .msgTab .msgTable span.msgReg{width: 25%;}
-  .msgTab .msgTable span.msgEmail{display: none;}
-  .msgTab .msgTable span.msgDelete{width: 10%;}
+  .admin .adminTable span.msgNum{width: 10%;}
+  .admin .adminTable span.msgId{width: 15%;}
+  .admin .adminTable span.msgTit{width: 40%;}
+  .admin .adminTable span.msgReg{width: 25%;}
+  .admin .adminTable span.msgEmail{display: none;}
+  .admin .adminTable span.msgDelete{width: 10%;}
 }
 
 @media screen and (max-width:800px){
@@ -192,16 +192,27 @@
   .searchSlect,.qnaSearchInput,.adminSearchInput,.qnaSearchBtn,.adminSearchBtn{font-size: 12px; _height: 25px;}
 
   /* admin page style */
-  .admin .adminTabs button{padding: 5px 10px; font-size: 12px;}
+  .admin .adminTabs button{padding: 10px 25px; font-size: 12px;}
 
-  .msgTab .msgTable{margin: 20px auto 0;}
-  .msgTab .msgTable span{font-size: 12px; padding: 8px 0;}
-  .msgTab .msgTable span.msgNum{width: 10%;}
-  .msgTab .msgTable span.msgId{width: 20%;}
-  .msgTab .msgTable span.msgTit{width: 55%;}
-  .msgTab .msgTable span.msgReg{display: none;}
-  .msgTab .msgTable span.msgDelete{width: 15%;}
-  .msgTab .msgTable span.msgDelete a{padding: 3px 10px;}
+  .admin .adminTable{margin: 20px auto;}
+  .admin .adminTable span{font-size: 12px; padding: 8px 0;}
+  .admin .adminTable span.msgNum{width: 10%;}
+  .admin .adminTable span.msgId{width: 20%;}
+  .admin .adminTable span.msgTit{width: 55%;}
+  .admin .adminTable span.msgReg{display: none;}
+  .admin .adminTable span.msgDelete{width: 15%;}
+  .admin .adminTable span.msgDelete a{padding: 3px 10px;}
+
+  .adminViewBtns{font-size: 12px;}
+
+  /* admin member tab style */
+  .memberTab .adminTable span.memNum{display: none;}
+  .memberTab .adminTable span.memId{width: 20%;}
+  .memberTab .adminTable span.memName{width: 20%;}
+  .memberTab .adminTable span.memLevel{width: 15%;}
+  .memberTab .adminTable span.memPoint{width: 15%;}
+  .memberTab .adminTable span.memUpdate{width: 15%;}
+  .memberTab .adminTable span.memDelete{width: 15%;}
 }
 
 @media screen and (max-width:600px){
@@ -247,10 +258,8 @@
 
   /* admin page style */
   .admin .adminTabs{display: flex; justify-content: center;}
-  .admin .adminTabs button{display: block; width: 40px; height: 40px; margin: 0 2px;}
-  .admin .adminTabs button i{display: inline; font-size: 18px;}
-  .admin .adminTabs button i.fa-mobile{font-size: 25px;}
-  .admin .adminTabs button b{display: none;}
+  .admin .adminTabs button{display: block; width: 30%; margin: 0 2px; padding: 5px 0;}
+
 }    
 
 @media screen and (max-width:480px){
@@ -342,10 +351,25 @@
   .qnaView .ansResult p.adminId a{width: 100%; text-align: center; margin-top: 3px;}
 
   /* admin page style */
-  .msgTab .msgTable{width: 90%;}
-  .msgTab .msgTable span.msgNum{display: none;}
-  .msgTab .msgTable span.msgId{width: 20%;}
-  .msgTab .msgTable span.msgTit{width: 65%;}
-  .msgTab .msgTable span.msgDelete{width: 15%;}
-  .msgTab .msgTable span.msgDelete a{padding: 3px 5px;}
+  .admin .adminTabs{width: 90%;}
+  
+  .admin .adminTable{width: 90%;}
+  .admin .adminTable span.msgNum{display: none;}
+  .admin .adminTable span.msgId{width: 20%;}
+  .admin .adminTable span.msgTit{width: 65%;}
+  .admin .adminTable span.msgDelete{width: 15%;}
+  .admin .adminTable span.msgDelete a{padding: 3px 5px;}
+
+  .adminViewBtns{width: 90%;}
+
+  /* admin member tab style */
+  .memberTab .adminTable span.memNum{display: none;}
+  .memberTab .adminTable span.memId{width: 25%;}
+  .memberTab .adminTable span.memName{width: 25%;}
+  .memberTab .adminTable span.memLevel{width: 25%;}
+  .memberTab .adminTable span.memPoint{width: 25%;}
+  .memberTab .adminTable span.memUpdate{width: 50%;}
+  .memberTab .adminTable span.memDelete{width: 50%;}
+  .memberTab .adminTable span button{width: 85%;}
+  .memberTab .adminTable span.memUpdate,.memberTab .adminTable span.memDelete{display: none;}
 }
