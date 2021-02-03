@@ -204,6 +204,7 @@
   .admin .adminTable span.msgDelete a{padding: 3px 10px;}
 
   .adminViewBtns{font-size: 12px;}
+  .adminViewBtns .checkDeleteBtn{font-size: 12px;}
 
   /* admin member tab style */
   .memberTab .adminTable span.memNum{display: none;}
@@ -213,6 +214,20 @@
   .memberTab .adminTable span.memPoint{width: 15%;}
   .memberTab .adminTable span.memUpdate{width: 15%;}
   .memberTab .adminTable span.memDelete{width: 15%;}
+
+  /* admin qna tab style */
+  .qnaTab .adminTable span.qnaCheck{width: 10%;}
+  .qnaTab .adminTable span.qnaNum{display: none;}
+  .qnaTab .adminTable span.qnaId{width: 15%;}
+  .qnaTab .adminTable span.qnaTit{width: 45%;}
+  .qnaTab .adminTable span.qnaReg{width: 15%;}
+  .qnaTab .adminTable span.qnaHit{width: 15%;}
+
+  .searchPaging{text-align: center;}
+  .qnaTab .checkDeleteBtn{margin-top: 0; font-size: 12px;}
+
+  /* detail page admin button style */
+  .productAdminBtns{text-align: center;}
 }
 
 @media screen and (max-width:600px){
@@ -260,6 +275,12 @@
   .admin .adminTabs{display: flex; justify-content: center;}
   .admin .adminTabs button{display: block; width: 30%; margin: 0 2px; padding: 5px 0;}
 
+  /* admin qna tab style */
+  .qnaTab .adminTable span.qnaCheck{width: 15%;}
+  .qnaTab .adminTable span.qnaId{width: 20%;}
+  .qnaTab .adminTable span.qnaTit{width: 65%;}
+  .qnaTab .adminTable span.qnaReg{display: none;}
+  .qnaTab .adminTable span.qnaHit{display: none;}
 }    
 
 @media screen and (max-width:480px){

@@ -85,7 +85,31 @@ $design_detail_num = $_GET['num'];
                     <p><?=$design_detail_des?></p>
                     <a href="/gold/index.php#contact"><i class="fa fa-arrow-right"></i> Get In Touch with..</a>
                 </div>
+                <?php
+                if($userlevel !=1 ){
+                ?>
+                <input type="hidden">
+                <?php
+                } else {
+                ?>
+                <div class="productAdminBtns">
+                  <button type="button" onclick="location.href='/gold/pages/admin/update_product.php?key=design_update_form&num=<?=$design_detail_num?>'">수정</button>
+                  <button type="button" onclick="confirmDel()">삭제</button>
+                </div>
+                <?php
+                }
+                ?>
             </div>
+            <script>
+              function confirmDel(){
+                let confirmCheck = confirm('정말 삭제하시겠습니까?');
+                if(confirmCheck == false){
+                  return false;
+                } else {
+                  location.href='/gold/php_process/pages/design_detail_delete.php?num=<?=$design_detail_num?>'
+                }
+              }
+            </script>
           </div><!--end of leftBox-->
 
           <div class="designRight deweRight">

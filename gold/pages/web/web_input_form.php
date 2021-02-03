@@ -39,7 +39,7 @@
           </div>
         </div><!--contact end of common title -->
 
-        <!-- design input contents form -->
+        <!-- web input contents form -->
         <div class="webInputForm webDesigninput">
           <form action="/gold/php_process/pages/web_insert.php" method="post" name="web_form" enctype="multipart/form-data">
             <div class="titleSer clear">

@@ -43,3 +43,13 @@
 .memberTab .adminTable span input{width: 80%; border: 1px solid #d0af51; border-radius: 0; outline: 0; color: #838383; text-align: center; padding: 5px 0;}
 .memberTab .adminTable span button{background: #d0af51; color: #fff; padding: 5px 10px; font-size: 12px; outline: 0; border: 0;}
 .memberTab .adminContents span.memNum, .memberTab .adminContents span.memId,.memberTab .adminContents span.memName{line-height: 2;}
+
+/* admin qna panel style */
+.qnaTab .adminTable span.qnaCheck{width: 10%;}
+.qnaTab .adminTable span.qnaNum{width: 10%;}
+.qnaTab .adminTable span.qnaId{width: 15%;}
+.qnaTab .adminTable span.qnaTit{width: 40%;}
+.qnaTab .adminTable span.qnaReg{width: 15%;}
+.qnaTab .adminTable span.qnaHit{width: 10%;}
+.qnaTab .checkDeleteBtn{border:0; outline:0; background: #d0af51; color: #fff; padding: 0 30px; height: 30px;margin-top: 10px;}
+.adminViewBtns .checkDeleteBtn{padding: 5px 15px; border: 1px solid #d0af51; display: block; background: #d0af51; color: #fff; transition: all 0.4s; margin-top:0; float: left;}

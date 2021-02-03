@@ -1,3 +1,7 @@
+/* common admin button style */
+.productAdminBtns{width: 100%; height: auto;}
+.productAdminBtns button{border: 1px solid #d0af51; background: #d0af51; color: #fff; padding: 5px 30px; outline: 0; margin-top: 10px;}
+
 /* design page box style */
 .deweBoxes{width:100%; height: auto; overflow: hidden;}
 .deweBoxes .deweBox{width: 25%; height: auto; _border: 1px solid; float: left; padding: 5px;}

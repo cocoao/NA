@@ -82,7 +82,7 @@
               <?php
               } else {
               ?>
-              <a href="/gold/pages/qna/qna.php">돌아가기</a>
+              <a href="javascript:history.go(-1)">돌아가기</a>
               <button type="submit" class="ansUpdate" onclick="ansUpdate()">수정</button>
               <?php
               }

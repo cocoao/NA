@@ -172,11 +172,92 @@
             </div><!--end of search-->
           </div><!--end of searchPaging-->
         </div><!--end of member tab-->
-        <div class="webTab adminPanel">webTab</div>
-        <div class="appTab adminPanel">appTab</div>
-        <div class="qnaTab adminPanel">qnaTab</div>
+        <div class="qnaTab adminPanel deweBoxes">
+          <div class="adminTable">
+            <ul class="adminList">
+              <li class="adminTitle clear">
+                <span class="qnaCheck">선택</span>
+                <span class="qnaNum">번호</span>
+                <span class="qnaId">아이디</span>
+                <span class="qnaTit">제목</span>
+                <span class="qnaReg">등록일</span>
+                <span class="qnaHit">조회수</span>
+              </li>
+
+              <form action="/gold/php_process/pages/qna_check_delete.php" method="post" name="adminQnaDelete">
+              <?php
+                // database connact
+                include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';
+                $sql = "select * from gold_qna order by GOLD_QNA_num desc limit 5";
+                
+                $qna_result = mysqli_query($dbConn, $sql);
+                while($qna_row = mysqli_fetch_array($qna_result)){
+                  $qna_res_num = $qna_row['GOLD_QNA_num'];
+                  $qna_res_id = $qna_row['GOLD_QNA_id'];
+                  $qna_res_tit = $qna_row['GOLD_QNA_tit'];
+                  $qna_res_reg = $qna_row['GOLD_QNA_reg'];
+                  $qna_res_hit = $qna_row['GOLD_QNA_hit'];
+              ?>
+              <li class="adminContents clear">
+                <span class="qnaCheck"><input type="checkbox" name="item[]" value="<?=$qna_res_num?>"></span>
+                <span class="qnaNum"><?=$qna_res_num?></span>
+                <span class="qnaId"><?=$qna_res_id?></span>
+
+                <?php
+                $sql = "select * from gold_ans where GOLD_ANS_QNA_num=$qna_res_num order by GOLD_ANS_num desc";
+
+                $ans_res = mysqli_query($dbConn, $sql);
+                $is_ans_res = mysqli_num_rows($ans_res);
+
+                if(!$is_ans_res){
+                ?>
+                <span class="qnaTit"><a href="/gold/pages/qna/qna_view.php?num=<?=$qna_res_num?>"><?=$qna_res_tit?></a></span>
+                <?php 
+                } else {
+                ?>
+                <span class="qnaTit"><a href="/gold/pages/qna/qna_view.php?num=<?=$qna_res_num?>"><?=$qna_res_tit?> [답변완료]</a></span>
+                <?php
+                }
+                ?>
+                <span class="qnaReg"><?=$qna_res_reg?></span>
+                <span class="qnaHit"><?=$qna_res_hit?></span>
+              </li>
+              <?php
+                }
+              ?>
+              </form>
+            </ul>
+          </div>
+          <div class="searchPaging clear">
+            <button type="button" onclick="qnaCheckDelete()" class="checkDeleteBtn">선택 삭제</button>
+            <div class="search">
+              <form action="/gold/pages/admin/search_result.php?key=qna_result" method="post" name="qnaSearch" class="clear adminSearch">
+                <select name="searchSlect" id="" class="searchSlect">
+                  <option value="qnaSearchID">아이디</option>
+                  <option value="qnaSearchTit">제목</option>
+                </select>
+                <input type="text" name="qnaSearchInput" placeholder="검색어를 입력해 주세요" class="adminSearchInput">
+                <button type="button" class="adminSearchBtn" onclick="qna_search_check()"><i class="fa fa-search"></i></button>
+                <script>
+                  function qna_search_check(){
+                    if(!document.qnaSearch.qnaSearchInput.value){
+                      alert('검색어를 입력해 주세요');
+                      document.qnaSearch.qnaSearchInput.focus();
+                      return;
+                    }
+                    document.qnaSearch.submit();
+                  }
+                </script>
+              </form>
+            </div><!--end of search-->
+          </div><!--end of searchPaging-->
+        </div><!--end of qna tab-->
       </div><!--end of center-->
-    
+    <script>
+      function qnaCheckDelete(){
+        document.adminQnaDelete.submit();
+      }
+    </script>
     <?php
      }
     ?>
