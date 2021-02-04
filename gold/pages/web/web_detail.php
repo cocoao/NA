@@ -28,6 +28,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gold</title>
+
+  <!-- favicon link -->
+  <link rel="apple-touch-icon" href="/gold/img/favicon.ico">
+  <link rel="icon" href="/gold/img/favicon.ico">
+
   <!-- font awesome link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -58,11 +63,11 @@
           <div class="webLeft deweLeft">
             <!-- title width common style -->
             <div class="title">
-            <h2><?=$web_detail_tit?></h2>
-            <div class="linkBox">
-                <span class="line"></span>
-                <a href="/gold/pages/web/web.php">view all website</a>
-            </div>
+              <h2><?=$web_detail_tit?></h2>
+              <div class="linkBox">
+                  <span class="line"></span>
+                  <a href="/gold/pages/web/web.php">view all website</a>
+              </div>
             </div><!-- end of common title -->
             <div class="detailCon">
               <div class="webTabBtns">
@@ -107,7 +112,7 @@
                 <?php
                 }
                 ?>
-            </div>
+            </div><!--end of web detail contents-->
             <script>
               function confirmDel(){
                 let confirmCheck = confirm('정말 삭제하시겠습니까?');
@@ -119,15 +124,13 @@
                 }
               }
             </script>
-
-            </div><!--end of web detail contents-->
           </div><!--end of leftBox-->
 
           <div class="webRight deweRight">
           <?php include $_SERVER["DOCUMENT_ROOT"]."/gold/include/web_side_detail.php" ?>
           <?php include $_SERVER["DOCUMENT_ROOT"]."/gold/include/app_side_detail.php" ?>
           </div><!--end of rightBox-->
-
+        
       </div><!--end of center-->
     </section>
     <?php include $_SERVER["DOCUMENT_ROOT"]."/gold/include/about.php" ?>

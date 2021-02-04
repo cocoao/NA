@@ -22,6 +22,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gold</title>
+
+  <!-- favicon link -->
+  <link rel="apple-touch-icon" href="/gold/img/favicon.ico">
+  <link rel="icon" href="/gold/img/favicon.ico">
+  
   <!-- font awesome link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -122,7 +127,7 @@
                 <?php
                 }
                 ?>
-            </div>
+            </div><!--end of web detail contents-->
             <script>
               function confirmDel(){
                 let confirmCheck = confirm('정말 삭제하시겠습니까?');
@@ -133,7 +138,6 @@
                 }
               }
             </script>
-            </div><!--end of app detail contents-->
           </div><!--end of leftBox-->
 
           <div class="appRight deweRight">

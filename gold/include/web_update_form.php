@@ -15,9 +15,9 @@ $web_result_mimg = $web_result_row['GOLD_WEB_mimg'];
 $web_result_cli = $web_result_row['GOLD_WEB_cli'];
 $web_result_reg = $web_result_row['GOLD_WEB_reg'];
 $web_result_dom = $web_result_row['GOLD_WEB_dom'];
-
 ?>
-<!-- design input contents form -->
+
+<!-- web input contents form -->
 <div class="webInputForm webDesigninput">
   <form action="/gold/php_process/pages/web_update.php?num=<?=$web_num?>" method="post" name="web_form" enctype="multipart/form-data">
     <div class="titleSer clear">
@@ -73,7 +73,7 @@ $web_result_dom = $web_result_row['GOLD_WEB_dom'];
       </div>
     </div><!-- end of image upload box -->
   </form>
-</div><!-- end of design input form -->
+</div><!-- end of web input form -->
 <div class="btns">
   <button type="button" class="commonBtn" id="submitBtn" onclick="updateSubmit()">UPDATE</a>
 </div>

@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gold</title>
+
+  <!-- favicon link -->
+  <link rel="apple-touch-icon" href="/gold/img/favicon.ico">
+  <link rel="icon" href="/gold/img/favicon.ico">
+
   <!-- font awesome link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -76,16 +81,16 @@
                 </p>
               </form>
               <?php
-              if($userid==''){
-              ?>
-                <button type="submit" class="alertLogin" onclick="plzLogin()">등록</button>  
+              if($userlevel != 1){
+              ?>                
+              <a href="javascript:history.go(-1)">돌아가기</a>            
               <?php
-              } else {
+              } else{
               ?>
               <a href="javascript:history.go(-1)">돌아가기</a>
               <button type="submit" class="ansUpdate" onclick="ansUpdate()">수정</button>
               <?php
-              }
+                }
               ?>
           </div><!--end of write box-->
 
@@ -123,7 +128,7 @@
               <textarea name="ansInputTxt" placeholder="답글을 작성해주세요"></textarea>
               <p class="ansBtnBox">
                 <?php
-                if($userid==''){
+                if($userlevel != 1){
                 ?>
                   <button type="button" class="ansBtn" onclick="plzLogin()">답글달기</button>
                 <?php
@@ -147,7 +152,7 @@
     // ansBtn.addEventListener('click',insertAns);
 
     function plzLogin(){
-    alert('글쓰기를 하시려면 로그인이 필요합니다');
+    alert('글쓰기 권한이 없습니다.');
     }
 
     function ansUpdate(){

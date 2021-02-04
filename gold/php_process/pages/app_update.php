@@ -1,3 +1,4 @@
+<meta charset='utf-8'>
 <?php
   $app_num = $_REQUEST['num'];
   $app_title = nl2br($_REQUEST['app_title']);
@@ -79,6 +80,7 @@
 
     echo "
     <script>
+        alert('수정이 완료되었습니다');
         location.href='/gold/pages/app/app.php';
     </script>
     "

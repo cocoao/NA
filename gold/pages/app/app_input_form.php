@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gold</title>
+  
+  <!-- favicon link -->
+  <link rel="apple-touch-icon" href="/gold/img/favicon.ico">
+  <link rel="icon" href="/gold/img/favicon.ico">
+
   <!-- font awesome link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 

@@ -83,9 +83,9 @@
 
   echo "
   <script>
-      location.href='/gold/pages/web/web.php';
+    alert('수정이 완료되었습니다');
+    location.href='/gold/pages/web/web.php';
   </script>
   "
 
-  // echo $web_title, $web_serial, $web_client, $web_domain, $web_desc, $regist_day,$main_name,$mobile_name,$thumbnail_name;
 ?>
