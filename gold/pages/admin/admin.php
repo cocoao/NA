@@ -236,11 +236,12 @@
           <div class="searchPaging clear">
             <button type="button" onclick="qnaCheckDelete()" class="checkDeleteBtn">선택 삭제</button>
             <div class="search">
-              <form action="/gold/pages/admin/search_result.php?key=qna_result" method="post" name="qnaSearch" class="clear adminSearch">
+              <form action="/gold/pages/admin/search_result.php?key=qna_result" method="get" name="qnaSearch" class="clear adminSearch">
                 <select name="searchSlect" id="" class="searchSlect">
                   <option value="qnaSearchID">아이디</option>
                   <option value="qnaSearchTit">제목</option>
                 </select>
+                <input type="hidden" name="key" value="qna_result">
                 <input type="text" name="qnaSearchInput" placeholder="검색어를 입력해 주세요" class="adminSearchInput">
                 <button type="button" class="adminSearchBtn" onclick="qna_search_check()"><i class="fa fa-search"></i></button>
                 <script>

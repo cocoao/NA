@@ -45,7 +45,7 @@
         </div><!--contact end of common title -->
 
         <!-- app input contents form -->
-        <div class="designInputForm webDesigninput">
+        <div class="designInputForm webDesigninput appInputForm">
           <form action="/gold/php_process/pages/app_insert.php" method="post" name="app_form" enctype="multipart/form-data">
             <div class="titleSer clear">
               <p class="title_input">
